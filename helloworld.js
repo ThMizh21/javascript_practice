@@ -5,8 +5,8 @@ console.log("x="+ x);
 let pi = 3.14;
 console.log("pi=" + pi);
 
-let name = "Rajnikanth"
-console.log("My name is " + name);
+let name1 = "Rajnikanth"
+console.log("My name is " + name1);
 
 let firstName = "Stephen"
 let lastName = "Hawking"
