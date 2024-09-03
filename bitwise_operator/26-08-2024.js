@@ -1,0 +1,17 @@
+let A=5;
+let B=2;
+let C=1;
+// result=(A&B)&C;
+// console.log(result);
+// result1=A^B;
+// console.log(result1);
+// result2=C<<A;
+// console.log(result2);
+// result3=(A&B)|(B&C);
+// console.log(result3);
+result=(A|B);
+console.log(result);
+result=(A^B);
+console.log(result);
+result=~(A|B);
+console.log(result);
