@@ -1,8 +1,6 @@
-let a=16;
-and (a);
-
-function and(a) {
-    c=~a;
-    console.log(c);
-    
+function not(a){
+   return ~a;
 }
+
+let result=not(7);
+console.log(result);
