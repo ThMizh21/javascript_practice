@@ -1,10 +1,3 @@
-// let i = 1;
-// // let text;
-// do {
-//   text += "The number is " + i;
-//   i++;
-// }
-// while (i < 10);
 
 let i = 1;
 let text = ""; // Initialize text to an empty string
