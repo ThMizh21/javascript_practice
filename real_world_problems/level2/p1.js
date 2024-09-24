@@ -7,4 +7,4 @@ function traintiming(n) {
     console.log("The earliest train departure is at "+earliest_departure);
 }
 
-traintiming([10, 15, 7, 20, 5]);
+traintiming(n)= [10, 15, 7, 20, 5];
