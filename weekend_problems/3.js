@@ -2,11 +2,12 @@
 
 function printMultiplicationTable(n,r){
     
-    for(i=r;i>0;i--){
+    for(i=1;i<=r;i++){
         let product=n*i;
         console.log(`${n}*${i}=${product}`);
 
     }
 }
 
-printMultiplicationTable(5,6);
+
+printMultiplicationTable(5,10);
