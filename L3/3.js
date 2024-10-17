@@ -12,4 +12,4 @@ function LCM(a,b) {
 }
 }
 
-LCM(8,5)
+LCM(15,60)
