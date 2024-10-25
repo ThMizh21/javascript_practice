@@ -1,11 +1,10 @@
 // Given an array of strings, find the string which comes first alphabetically without using any library functions. 
 function string_sort (str) {
-    let i = 0,
-      j
+    let i = 0,j;
     while (i < str.length) {
       j = i + 1
       while (j < str.length) {
-        if (str[j] < str[i]) { //xnjeev < suraj
+        if (str[j] < str[i]) { //sanjeev < suraj
           let temp = str[i]
           str[i] = str[j]
           str[j] = temp
