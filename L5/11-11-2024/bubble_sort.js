@@ -1,7 +1,7 @@
 // Implement the bubblesort algorithm for an array of integers
 
 let arr = [42, 17, 8, 33, 59];
-
+let isSwap = false ;
 for(i=0;i<arr.length;i++){
     for(j=0;j<arr.length-1;j++){
     let a = arr[j];
@@ -9,9 +9,13 @@ for(i=0;i<arr.length;i++){
     if(a>b) {
      arr[j] = b;
      arr[j+1] = a;
+     isSwap = true;
     }
     
 
+}
+if(isSwap === false){
+    break;
 }
     
 }
