@@ -1,8 +1,10 @@
 // Implement the bubblesort algorithm for an array of integers
 
-let arr = [42, 17, 8, 33, 59];
+let arr = [8,42, 17,  33, 59];
+let count =0;
 let isSwap = false ;
 for(i=0;i<arr.length;i++){
+    count++
     for(j=0;j<arr.length-1;j++){
     let a = arr[j];
     let b = arr[j+1];
@@ -18,6 +20,8 @@ if(isSwap === false){
     
 }
 console.log(arr);
+console.log(count);
+
 
 // line 4 : a boolean variable is define as false to terminate the loop if there is no swap happens.
 // line 5 : a loop starts from 0 and run till the end of the arr.
