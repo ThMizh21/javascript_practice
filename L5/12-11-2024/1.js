@@ -2,18 +2,27 @@
 
 let arr = [1,13, 89, 15, 28,13,15, 1, 7];
 
-for(let i=0 ;i < arr.length;i++){
-    let a = arr[i];
-   for(let j=i+1 ;j<arr.length;j++){
-    let b= arr[j];
-    if(a > b){
-        arr[i] = b;
-        arr[j] = a;
-        a = arr[i];
+let n = arr.length;
+
+for (let i = 0; i < n - 1; i++) {
+    // Assume the first element of the unsorted part is the smallest
+    let minIndex = i;
+
+    // Check the rest of the unsorted part for a smaller element
+    for (let j = i + 1; j < n; j++) {
+        if (arr[j] < arr[minIndex]) {
+            minIndex = j; // Update the index of the smallest element
+        }
     }
-   }
-    
+
+    // Swap the smallest element with the first element of the unsorted part
+    if (minIndex !== i) {
+        let temp = arr[i];
+        arr[i] = arr[minIndex];
+        arr[minIndex] = temp;
+    }
 }
+
 console.log(arr);
 
 // line 5 : A loop runs till the end of the array.

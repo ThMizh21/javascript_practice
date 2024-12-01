@@ -1,21 +1,22 @@
 //Insertion Sort
 let arr = [64, 34, 25, 12, 22, 11, 90, 5];
-let count =0;
-for(let i=1;i<arr.length;i++){
-    let index = i;
-    let value = arr[i];
-    for(let j =i-1;j>=0;j--){
-        let svalue = arr[j];
-        if(svalue>value){
-           arr[j+1] = svalue;
-           index =j;
-           count++ 
-        }
+let n = arr.length;
+
+for (let i = 1; i < n; i++) {
+    // The current element to be inserted
+    let key = arr[i];
+    let j = i - 1;
+
+    // Move elements of the sorted portion that are greater than the key
+    while (j >= 0 && arr[j] > key) {
+        arr[j + 1] = arr[j];
+        j--;
     }
-    arr[index] = value
+
+    // Insert the key in its correct position
+    arr[j + 1] = key;
 }
 console.log(arr);
-console.log(count);
 
 
 // line 3 : The loop starts from 1 as we consider the first element of the array is  sorted.
