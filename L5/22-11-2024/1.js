@@ -10,7 +10,7 @@ function hasAllUniqueCharacters(str) {
         seenChars.add(str[i]);  // Add the character to the set
     }
     
-    return true;  // If no duplicates are found, return true
+    return true;  // If no duplicates are found, return true 
 }
 console.log(hasAllUniqueCharacters("abcdef"));  
 console.log(hasAllUniqueCharacters("aabbcc"));  

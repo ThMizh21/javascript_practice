@@ -26,7 +26,7 @@ function fourSum(arr, target) {
                     // Ensure that we don't reuse the same elements
                     if (pair[1] < i) {
                         console.log(`Found four elements: ${arr[pair[0]]}, ${arr[pair[1]]}, ${arr[i]}, ${arr[j]}`);
-                        return true;
+                        // return true;
                     }
                 }
             }
@@ -38,8 +38,8 @@ function fourSum(arr, target) {
             pairsMap.get(currentSum).push([i, j]);
         }
     }
-    
-    return false;
+    console.log(pairsMap)
+    // return false;
 }
 
 // Example usage
@@ -51,3 +51,4 @@ if (result) {
 } else {
     console.log("No such four elements found.");
 }
+ b
