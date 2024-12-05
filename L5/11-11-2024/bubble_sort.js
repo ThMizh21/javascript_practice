@@ -1,26 +1,21 @@
 // Implement the bubblesort algorithm for an array of integers
 
-let arr = [8,42, 17,  33, 59];
-let count =0;
-let isSwap = false ;
-for(i=0;i<arr.length;i++){
-    count++
-    for(j=0;j<arr.length-1;j++){
-    let a = arr[j];
-    let b = arr[j+1];
-    if(a>b) {
-     arr[j] = b;
-     arr[j+1] = a;
-     isSwap = true;
+let arr = [89,32,34,54,6,90,12,5];
+let isSwap;
+
+for(let i=0;i<arr.length;i++){
+    isSwap = false;
+    for(let j=0;j<arr.length-1-i;j++){
+        if(arr[j]>arr[j+1]){
+            [arr[j],arr[j+1]] = [arr[j+1],arr[j]]
+            isSwap = true;
+        }
+    }
+    if(!isSwap){
+        break;
     }
 }
-if(isSwap === false){
-    break;
-}
-    
-}
-console.log(arr);
-console.log(count);
+console.log(arr)
 
 
 // line 4 : a boolean variable is define as false to terminate the loop if there is no swap happens.
